@@ -81,7 +81,7 @@ class videoStream:
 
 	def setFocus(self):
 		self.stream.set(cv2.CAP_PROP_AUTOFOCUS, 0)
-		self.stream.set(cv2.CAP_PROP_FOCUS, self.focus)
+		self.stream.set(cv2.CAP_PROP_FOCUS, 0)
 
 class multiCamera(videoStream):
 	camAddrList = []
